@@ -9,7 +9,8 @@ namespace CBFitness.BL.Model
     [Serializable]
     public class Activity
     {
-        public string Name { get; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public double CaloriesPerMin { get; set; }
 
         public Activity(string name, double caloriesPerMin)
